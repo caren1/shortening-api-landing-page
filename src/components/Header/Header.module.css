@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.header > img {
+    max-width: 20%;
+}
+
+.header__left {
+    margin-left: 35px;
+}
+
+.header__right {
+    margin-left: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-size: 14px;
+    margin-right: 18px;
+}
+
+.link:hover {
+    color: hsl(260, 8%, 14%);
+    transition: 0.5s color;
+}
+
+.buttonPrimary {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 25px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+}
+
+.buttonPrimary:hover {
+    background-color: hsl(180, 42%, 63%);
+    transition: 0.5s background-color;
+}
