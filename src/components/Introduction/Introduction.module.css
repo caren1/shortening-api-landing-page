@@ -1,0 +1,53 @@
+.introduction {
+    margin-top: 10px;
+    display: flex;
+    padding: 30px 100px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    min-height: 500px;
+}
+.introduction > * {
+    padding: 10px;
+}
+
+.introduction > h1 {
+    font-size: 65px;
+    font-weight: 700;
+    max-width: 50%;
+    line-height: 75px;
+    color: hsl(260, 8%, 14%);
+}
+
+.introduction > h2 {
+    max-width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(257, 7%, 63%);
+    margin-bottom: 10px;
+}
+
+.introduction > img {
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    right: -180px;
+    max-width: 70%;
+}
+
+.buttonPrimary {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+}
+
+.buttonPrimary:hover {
+    background-color: hsl(180, 42%, 63%);
+    transition: 0.5s background-color;
+}
