@@ -1,7 +1,9 @@
 .introduction {
     margin-top: 10px;
+    margin-bottom: 50px;
+    height: 100%;
     display: flex;
-    padding: 30px 100px;
+    padding: 30px 100px 30px 100px;
     position: relative;
     flex-direction: column;
     justify-content: center;

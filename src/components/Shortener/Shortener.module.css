@@ -1,0 +1,32 @@
+.shortener {
+    background-color: rebeccapurple;
+    min-width: 80vw;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px 300px;
+    border-radius: 8px;
+
+}
+
+.buttonPrimary {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 25px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 8px;
+    outline: none;
+    margin-left: 15px;
+    
+}
+
+.buttonPrimary:hover {
+    background-color: hsl(180, 42%, 63%);
+    transition: 0.5s background-color;
+}

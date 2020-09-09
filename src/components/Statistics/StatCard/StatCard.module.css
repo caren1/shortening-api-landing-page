@@ -1,0 +1,50 @@
+.statCard {
+    background-color: white;
+    min-height: 180px;
+    min-width: 250px;
+    margin: 15px;
+    padding: 25px 30px 35px 30px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+.statCard > .icon {
+    background-color: hsl(257, 27%, 26%);
+    height: 90px;
+    width: 90px;
+    border-radius: 99px;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statCard > h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.statCard > p {
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(257, 7%, 63%);
+}
+
+@media (max-width: 780px) {
+    .statCard {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .statCard > .icon {
+        left: 40%;
+    }
+}
