@@ -48,6 +48,7 @@
     padding: 10px 30px;
     background-color: hsl(180, 66%, 49%);
     border-radius: 50px;
+    margin-top: 10px;
 }
 
 .buttonPrimary:hover {

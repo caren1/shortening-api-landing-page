@@ -1,0 +1,25 @@
+.callToAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: purple;
+    color: white;
+}
+
+.buttonPrimary {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 30px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.buttonPrimary:hover {
+    background-color: hsl(180, 42%, 63%);
+    transition: 0.5s background-color;
+}

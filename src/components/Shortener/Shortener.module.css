@@ -1,10 +1,11 @@
 .shortener {
     background-color: rebeccapurple;
     border-radius: 8px;
-    width: 70%;
+    width: 60%;
     padding: 35px;
     position: relative;
     top: -60px;
+    /* background-image: url('../../../public//images//bg-shorten-desktop.svg'); */
 }
 
 .shortener > form {
@@ -16,12 +17,19 @@
 .shortener > form > input {
     border-radius: 8px;
     padding: 10px;
-    width: 65%;
+    width: 75%;
     display: block;
+    text-indent: 10px;
+    border: none;
+}
+
+.shortener > form > input:focus {
+    outline: none;
+
 }
 
 .shortener > form > .buttonPrimary {
-    width: 20%;
+    width: 15%;
     text-decoration: none;
     font-size: 14px;
     color: white;
@@ -30,10 +38,12 @@
     border-radius: 8px;
     outline: none;
     margin-left: 15px;
+    cursor: pointer;
+    border: none;
     
 }
 
-.buttonPrimary:hover {
+.shortener > form > .buttonPrimary:hover {
     background-color: hsl(180, 42%, 63%);
     transition: 0.5s background-color;
 }
