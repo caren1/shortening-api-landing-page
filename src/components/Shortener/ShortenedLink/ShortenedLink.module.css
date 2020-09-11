@@ -1,0 +1,32 @@
+.shortenedLink {
+    display: flex;
+    width: 70%;
+    border-radius: 8px;
+    background-color: white;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.shortenedLink > .shortLink {
+    margin-left: auto;
+}
+
+.buttonPrimary {
+    /* width: 15%; */
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px 25px;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 8px;
+    outline: none;
+    margin-left: 15px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.buttonPrimary:hover {
+    background-color: hsl(180, 42%, 63%);
+    transition: 0.5s background-color;
+}

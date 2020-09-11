@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Shortener.module.css'
+import ShortenedLink from './ShortenedLink/ShortenedLink'
 
 const Shortener = () => {
     return(
@@ -9,6 +10,7 @@ const Shortener = () => {
             <button className={styles.buttonPrimary} type="submit">Shorten It!</button>
         </form>
         
+        {/* <ShortenedLink sourceLink="www.wp.pl" shortLink="https://zxc.ink/k4kyka"/> */}
     </div>
     )
 }
