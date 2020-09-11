@@ -1,15 +1,16 @@
 .introduction {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     height: 100%;
     display: flex;
-    padding: 30px 100px 30px 100px;
+    padding: 30px;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
     min-height: 500px;
+    margin-left: 40px;
 }
 .introduction > * {
     padding: 10px;
@@ -52,4 +53,15 @@
 .buttonPrimary:hover {
     background-color: hsl(180, 42%, 63%);
     transition: 0.5s background-color;
+}
+
+@media (max-width: 1000px) {
+    .introduction > h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .introduction > h2 {
+        font-size: 14px;
+    }
 }

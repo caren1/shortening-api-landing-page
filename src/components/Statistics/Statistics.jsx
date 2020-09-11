@@ -9,10 +9,8 @@ const Statistics = () => {
     return (
     
         <div className={styles.statistics}>
-            <div className={styles.shortner}>
-                <Shortener />
-            </div>
-
+            
+             <Shortener />
             <h1>Advanced Statistics</h1>
             <h2>Track how your links are performing across the web with our advanced statistics dashboard</h2>
             
