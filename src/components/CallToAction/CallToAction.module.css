@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: purple;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../../images//bg-boost-desktop.svg');
     color: white;
 }
 

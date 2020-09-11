@@ -2,22 +2,27 @@
     background-color: hsl(260, 8%, 14%);
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 60px;
 }
 
 .footer > .center {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .footer > .right {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
 .footer > .right > .icon {
     padding: 10px;
     font-size: 20px;
+}
+
+.footer > .right > .icon:hover {
+    opacity: 0.6;
+    transition: 0.25s opacity;
+    cursor: pointer;
 }

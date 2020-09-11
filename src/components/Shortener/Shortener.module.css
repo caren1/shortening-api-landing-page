@@ -1,11 +1,12 @@
 .shortener {
     background-color: rebeccapurple;
     border-radius: 8px;
-    width: 60%;
+    width: 70%;
     padding: 35px;
     position: relative;
     top: -60px;
-    /* background-image: url('../../../public//images//bg-shorten-desktop.svg'); */
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../../images//bg-shorten-desktop.svg');
 }
 
 .shortener > form {

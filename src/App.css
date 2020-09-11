@@ -3,10 +3,18 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
+
 
 .app {
     max-width: 1440px;
-
 }
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
 
 
