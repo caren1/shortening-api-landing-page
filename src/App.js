@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Header, Introduction, Shortener, Statistics, CallToAction } from './components'
+import { Header, Introduction, Statistics, CallToAction, Footer } from './components'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       {/* <Shortener/> */}
       <Statistics />
       <CallToAction />
+      <Footer />
     </div>
   );
 }
