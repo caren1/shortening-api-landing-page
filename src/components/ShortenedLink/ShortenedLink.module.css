@@ -39,8 +39,12 @@
         justify-content: flex-start;
     }
 
+    /* .shortenedLink > p {
+        border-bottom: 1px solid gray;
+    } */
+
     .shortenedLink > * {
-        margin: 8px 0;
+        margin: 12px 0;
     }
 
     .shortenedLink > .shortLink {
@@ -50,6 +54,7 @@
 
     .buttonPrimary {
         margin: 0;
-        width: 80%;
+        width: 78%;
+        text-align: center;
     }
 }
