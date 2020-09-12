@@ -48,3 +48,28 @@
     background-color: hsl(180, 42%, 63%);
     transition: 0.5s background-color;
 }
+
+@media (max-width: 876px) {
+    .shortener > form > .buttonPrimary {
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    
+    .shortener > form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shortener > form > input, .shortener > form > button {
+        width: 100% !important;
+    }
+    .shortener > form > button { 
+        margin-top: 20px;
+        margin-left: 0 !important;
+    }
+
+}

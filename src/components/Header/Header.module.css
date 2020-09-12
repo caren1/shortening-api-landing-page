@@ -45,4 +45,10 @@
 
 @media (max-width: 700px) {
     /* hamburdzia menu */
+    .header__right, .header__left{
+        display: none;
+    }
+    .header > img{
+        min-width: 80px;
+    }
 }

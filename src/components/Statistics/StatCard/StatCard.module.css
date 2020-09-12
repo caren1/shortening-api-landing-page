@@ -43,9 +43,27 @@
         align-items: center;
         text-align: center;
         max-width: 100%;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .statCard > .icon {
+        position: relative;
+        left: 0;
+        top: -55px;
+        /* left: 45%; */
+        /* left: 44.9%; */
     }
 
-    .statCard > .icon {
-        left: 40%;
+    .statCard > h2 {
+        margin-top: -30px;
     }
+}
+
+@media (max-width: 940px) {
+    .statCard > .icon {
+        position: relative;
+        /* left: 38%; */
+        /* left: 44.9%; */
+    }
+
 }

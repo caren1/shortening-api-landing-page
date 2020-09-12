@@ -66,3 +66,34 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 700px) {
+    .introduction {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .introduction > h1, .introduction > h2, .introduction > a {
+        order: 1;
+        max-width: 190%;
+    }
+
+    .introduction > h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .introduction > img {
+        position: relative;
+        top: -30px;
+        order: 0;
+        /* min-width: 500px; */
+        /* width: 100vh; */
+        left: 80px;
+        min-width: 400px;
+        max-width: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import StatCard from './StatCard/StatCard'
 import Shortener from '../Shortener/Shortener'
+import ShortenedLink from '../ShortenedLink/ShortenedLink'
 
 import styles from './Statistics.module.css'
 
@@ -11,6 +12,9 @@ const Statistics = () => {
         <div className={styles.statistics}>
             
              <Shortener />
+
+             <ShortenedLink sourceLink="www.wp.pl" shortLink="https://zxc.ink/k4kyka"/>
+
              
             <h1>Advanced Statistics</h1>
             <h2>Track how your links are performing across the web with our advanced statistics dashboard</h2>

@@ -24,3 +24,13 @@
     background-color: hsl(180, 42%, 63%);
     transition: 0.5s background-color;
 }
+
+@media (max-width: 700px) {
+    .callToAction {
+        text-align: center;
+    }
+
+    .callToAction > h1 {
+        font-size: 22px;
+    }
+}

@@ -22,3 +22,9 @@
     color: white;
     transition: 0.25s color;
 }
+
+@media (max-width: 700px) {
+    .links {
+        margin: 20px 20px;
+    }
+}
