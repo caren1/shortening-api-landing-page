@@ -22,6 +22,8 @@
 }
 
 .footer > .right > .icon:hover {
+    fill: hsl(180, 66%, 49%);
+    color: hsl(180, 66%, 49%);
     opacity: 0.6;
     transition: 0.25s opacity;
     cursor: pointer;

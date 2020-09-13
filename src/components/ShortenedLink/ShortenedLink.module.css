@@ -10,6 +10,8 @@
 
 .shortenedLink > .shortLink {
     margin-left: auto;
+    text-decoration: none;
+    color: hsl(180, 66%, 49%);
 }
 
 .buttonPrimary {
@@ -32,6 +34,11 @@
     transition: 0.5s background-color;
 }
 
+.shortenedLink > .shortLink:hover {
+    color: hsl(180, 42%, 63%);
+    transition: 0.5s color;
+}
+
 @media (max-width: 700px) {
     .shortenedLink {
         flex-direction: column;
@@ -49,8 +56,9 @@
 
     .shortenedLink > .shortLink {
         margin-left: 0;
-        ;
     }
+
+    
 
     .buttonPrimary {
         margin: 0;
