@@ -4,11 +4,12 @@ const shortLink = 'https://rel.ink/'
 
 const shortenLink = async (inputUrl) => {
     try {
-        const { hashid, url, created_at } = await axios.post(baseUrl, { urL : inputUrl })
+        const { hashid } = await axios.post(baseUrl, { urL : inputUrl })
         const responseUrl = {
             inputUrl,
             shortenedUrl : `${shortLink}/${hashid}`
         }
+        return responseUrl;
     } catch (error) {
         console.log(error);
     }

@@ -25,7 +25,7 @@ const Statistics = () => {
                 <StatCard icon={`./images/icon-detailed-records.svg`} title={`Detailed Records`} subtitle={`Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.`}/>
                 <StatCard icon={`./images/icon-fully-customizable.svg`} title={`Fully customizable`} subtitle={`Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.`}/>
             </div>         
-            <hr/>  
+            <hr className={styles.statistics__hr}/>  
         </div>
        
 

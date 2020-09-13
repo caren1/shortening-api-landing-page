@@ -7,7 +7,7 @@ const Links = ({ title,  links}) => {
             <h2>{title}</h2>
             <ul>
                 {links.map((link) => 
-                    <li key={link}><a href="#" target="_blank" rel="noopener noreferrer">{link}</a></li>
+                    <li key={link}><a href="http://" target="_blank" rel="noopener noreferrer">{link}</a></li>
                 )}
             </ul>
         </div>
