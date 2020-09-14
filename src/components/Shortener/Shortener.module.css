@@ -26,7 +26,10 @@
 
 .shortener > form > input:focus {
     outline: none;
+}
 
+.shortener > form > input:invalid {
+    border: 1px solid red;
 }
 
 .shortener > form > .buttonPrimary {

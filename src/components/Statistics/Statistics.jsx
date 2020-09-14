@@ -19,17 +19,12 @@ const Statistics = () => {
         console.log(targetUrl);
         if (targetUrl) {
             const links = shortenedLinks.concat(targetUrl)
-            {console.log(links);}
             setShortenedLinks(links)
         }
     }
 
     const handleInputChange = (event) => {
         setUserUrl(event.target.value)
-    }
-
-    const isValidInput = () => {
-        const linkPattern = "^http:\/\/.*[.]?"
     }
 
     return (
