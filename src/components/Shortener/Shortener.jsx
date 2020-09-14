@@ -1,32 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styles from './Shortener.module.css'
 
-// import { shortenLink } from '../../api/index'
-import api from '../../api/index'
 
-
-// const [ input, setInput ] = useState('')
-// const [ links, setLinks ] = useState([])
-
-
-// const onSubmit = (event) => {
-//     event.preventDefault()
-//     const apiResponse = api.shortenLink(input)
-//     console.log(apiResponse);
-// }
-
-// const handleInputChange = (event) => {
-//     event.preventDefault()
-//     console.log(event.target.value);
-//     setInput(event.target.value);
-    
-// }
-
-const Shortener = () => {
+const Shortener = ({ handleShortenIt, handleInputChange }) => {
     return(
     <div className={styles.shortener}>
-        <form action="">
-            <input  type="text" placeholder="Shorten a link here..."/>
+        <form onSubmit={handleShortenIt}>
+            <input onChange={handleInputChange}  type="text" placeholder="Shorten a link here..."/>
             <button className={styles.buttonPrimary} type="submit">Shorten It!</button>
         </form>
                 

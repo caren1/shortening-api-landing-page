@@ -1,20 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StatCard from './StatCard/StatCard'
 import Shortener from '../Shortener/Shortener'
 import ShortenedLink from '../ShortenedLink/ShortenedLink'
 
 import styles from './Statistics.module.css'
 
+import { shortenLink2 } from '../../api/index'
+
 const Statistics = () => {
+
+    const [ shortenedLinks, setShortenedLinks ] = useState([])
+    const [ userUrl, setUserUrl ] = useState('')
+
+
+    const handleShortenIt = async (event) => {
+        event.preventDefault()
+        const targetUrl = await shortenLink2(userUrl)
+        console.log(targetUrl);
+        if (targetUrl) {
+            const links = shortenedLinks.concat(targetUrl)
+            {console.log(links);}
+            setShortenedLinks(links)
+        }
+    }
+
+    const handleInputChange = (event) => {
+        setUserUrl(event.target.value)
+    }
+
+    const isValidInput = () => {
+        const linkPattern = "^http:\/\/.*[.]?"
+    }
 
     return (
     
         <div className={styles.statistics}>
             
-             <Shortener />
-
-             <ShortenedLink sourceLink="www.wp.pl" shortLink="https://zxc.ink/k4kyka"/>
-
+             <Shortener handleShortenIt={handleShortenIt} handleInputChange={handleInputChange}/>
+            {shortenedLinks.map(shortenedLink => (
+                <ShortenedLink key={shortenedLink.hashid} sourceLink={shortenedLink.inputUrl} shortLink={shortenedLink.targetLink} />))
+            }
              
             <h1>Advanced Statistics</h1>
             <h2>Track how your links are performing across the web with our advanced statistics dashboard</h2>
