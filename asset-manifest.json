@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shortening-api-landing-page/static/css/main.23854b9a.chunk.css",
+    "main.js": "/shortening-api-landing-page/static/js/main.ef04f068.chunk.js",
+    "main.js.map": "/shortening-api-landing-page/static/js/main.ef04f068.chunk.js.map",
+    "runtime-main.js": "/shortening-api-landing-page/static/js/runtime-main.91912467.js",
+    "runtime-main.js.map": "/shortening-api-landing-page/static/js/runtime-main.91912467.js.map",
+    "static/js/2.547054dd.chunk.js": "/shortening-api-landing-page/static/js/2.547054dd.chunk.js",
+    "static/js/2.547054dd.chunk.js.map": "/shortening-api-landing-page/static/js/2.547054dd.chunk.js.map",
+    "index.html": "/shortening-api-landing-page/index.html",
+    "precache-manifest.648f5db1b0c4de668a70e2074fb67110.js": "/shortening-api-landing-page/precache-manifest.648f5db1b0c4de668a70e2074fb67110.js",
+    "service-worker.js": "/shortening-api-landing-page/service-worker.js",
+    "static/css/main.23854b9a.chunk.css.map": "/shortening-api-landing-page/static/css/main.23854b9a.chunk.css.map",
+    "static/js/2.547054dd.chunk.js.LICENSE.txt": "/shortening-api-landing-page/static/js/2.547054dd.chunk.js.LICENSE.txt",
+    "static/media/CallToAction.module.css": "/shortening-api-landing-page/static/media/bg-boost-desktop.dc8b886b.svg",
+    "static/media/Shortener.module.css": "/shortening-api-landing-page/static/media/bg-shorten-desktop.a82de60e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91912467.js",
+    "static/js/2.547054dd.chunk.js",
+    "static/css/main.23854b9a.chunk.css",
+    "static/js/main.ef04f068.chunk.js"
+  ]
+}
