@@ -20,13 +20,11 @@ const ShortenedLink = ({ sourceLink, shortLink }) => {
 
 
     return (
-
-        
-
         <div className={styles.shortenedLink}>
             <p>{sourceLink}</p>
+            <hr className={styles.shortenedLink__hr}/>
             <a  className={styles.shortLink} href="http://">{shortLink}</a>
-            <button className={styles.buttonPrimary} id={isCopied ? 'copied' : ''} href="http://" target="_blank" rel="noopener noreferrer" onClick={() => copyLink(shortLink)}>{isCopied ? 'Copied!' : 'Copy'}</button>               
+            <button className={styles.buttonPrimary} href="http://" target="_blank" rel="noopener noreferrer" onClick={() => copyLink(shortLink)}>{isCopied ? 'Copied!' : 'Copy'}</button>               
         </div>
     )
 }

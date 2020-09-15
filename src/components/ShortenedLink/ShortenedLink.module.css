@@ -28,10 +28,6 @@
     border: none;
 }
 
-#copied {
-    background-color: hsl(257, 27%, 26%) !important;
-}
-
 .buttonPrimary:hover {
     background-color: hsl(180, 42%, 63%);
     transition: 0.5s background-color;
@@ -42,11 +38,25 @@
     transition: 0.5s color;
 }
 
+.shortenedLink__hr {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .shortenedLink {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        text-align: center;
+    }
+
+    .shortenedLink__hr {
+        display: block;
+        border: 0;
+        width: 100%;
+        margin: 5px 0 !important;
+        height: 1px;
+        background-color: rgb(192, 190, 190);
     }
 
     /* .shortenedLink > p {
@@ -61,11 +71,9 @@
         margin-left: 0;
     }
 
-    
-
     .buttonPrimary {
         margin: 0;
-        width: 78%;
+        width: 100%;
         text-align: center;
     }
 }

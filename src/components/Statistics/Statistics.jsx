@@ -17,10 +17,13 @@ const Statistics = () => {
 
     const handleShortenIt = async (event) => {
         event.preventDefault()
-        const targetUrl = await shortenLink2(userUrl)
         setIsLoading(true)
+        const targetUrl = await shortenLink2(userUrl)
         setUserUrl('')
-        if (targetUrl) {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 100);
+        if (targetUrl) { 
             setIsLoading(false)
             const links = shortenedLinks.concat(targetUrl)
             setShortenedLinks(links)
@@ -37,6 +40,7 @@ const Statistics = () => {
         <div className={styles.statistics}>
             
              <Shortener handleShortenIt={handleShortenIt} handleInputChange={handleInputChange} userUrl={userUrl} isLoading={isLoading}/>
+             {isLoading ? <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/dae67631234507.564a1d230a290.gif" /> : null}
             {shortenedLinks.map(shortenedLink => (
                 <ShortenedLink key={shortenedLink.hashid} sourceLink={shortenedLink.inputUrl} shortLink={shortenedLink.targetLink} />))
             }
