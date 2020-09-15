@@ -3,6 +3,7 @@ import StatCard from './StatCard/StatCard'
 import Shortener from '../Shortener/Shortener'
 import ShortenedLink from '../ShortenedLink/ShortenedLink'
 
+
 import styles from './Statistics.module.css'
 
 import { shortenLink2 } from '../../api/index'
@@ -11,13 +12,16 @@ const Statistics = () => {
 
     const [ shortenedLinks, setShortenedLinks ] = useState([])
     const [ userUrl, setUserUrl ] = useState('')
+    const [ isLoading, setIsLoading ] = useState(false)
 
 
     const handleShortenIt = async (event) => {
         event.preventDefault()
         const targetUrl = await shortenLink2(userUrl)
-        console.log(targetUrl);
+        setIsLoading(true)
+        setUserUrl('')
         if (targetUrl) {
+            setIsLoading(false)
             const links = shortenedLinks.concat(targetUrl)
             setShortenedLinks(links)
         }
@@ -27,11 +31,12 @@ const Statistics = () => {
         setUserUrl(event.target.value)
     }
 
+
     return (
     
         <div className={styles.statistics}>
             
-             <Shortener handleShortenIt={handleShortenIt} handleInputChange={handleInputChange}/>
+             <Shortener handleShortenIt={handleShortenIt} handleInputChange={handleInputChange} userUrl={userUrl} isLoading={isLoading}/>
             {shortenedLinks.map(shortenedLink => (
                 <ShortenedLink key={shortenedLink.hashid} sourceLink={shortenedLink.inputUrl} shortLink={shortenedLink.targetLink} />))
             }
