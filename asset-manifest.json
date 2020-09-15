@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shortening-api-landing-page/static/css/main.4a38996f.chunk.css",
+    "main.css": "/shortening-api-landing-page/static/css/main.67005ecc.chunk.css",
     "main.js": "/shortening-api-landing-page/static/js/main.b4e3c1a0.chunk.js",
     "main.js.map": "/shortening-api-landing-page/static/js/main.b4e3c1a0.chunk.js.map",
     "runtime-main.js": "/shortening-api-landing-page/static/js/runtime-main.ded37944.js",
@@ -8,9 +8,9 @@
     "static/js/2.b8d1441c.chunk.js": "/shortening-api-landing-page/static/js/2.b8d1441c.chunk.js",
     "static/js/2.b8d1441c.chunk.js.map": "/shortening-api-landing-page/static/js/2.b8d1441c.chunk.js.map",
     "index.html": "/shortening-api-landing-page/index.html",
-    "precache-manifest.21208aa9e3f171a37f5774cea440b50b.js": "/shortening-api-landing-page/precache-manifest.21208aa9e3f171a37f5774cea440b50b.js",
+    "precache-manifest.e24b3d8ceed792a3f8cd718fba9864c3.js": "/shortening-api-landing-page/precache-manifest.e24b3d8ceed792a3f8cd718fba9864c3.js",
     "service-worker.js": "/shortening-api-landing-page/service-worker.js",
-    "static/css/main.4a38996f.chunk.css.map": "/shortening-api-landing-page/static/css/main.4a38996f.chunk.css.map",
+    "static/css/main.67005ecc.chunk.css.map": "/shortening-api-landing-page/static/css/main.67005ecc.chunk.css.map",
     "static/js/2.b8d1441c.chunk.js.LICENSE.txt": "/shortening-api-landing-page/static/js/2.b8d1441c.chunk.js.LICENSE.txt",
     "static/media/CallToAction.module.css": "/shortening-api-landing-page/static/media/bg-boost-desktop.dc8b886b.svg",
     "static/media/Shortener.module.css": "/shortening-api-landing-page/static/media/bg-shorten-desktop.a82de60e.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.ded37944.js",
     "static/js/2.b8d1441c.chunk.js",
-    "static/css/main.4a38996f.chunk.css",
+    "static/css/main.67005ecc.chunk.css",
     "static/js/main.b4e3c1a0.chunk.js"
   ]
 }
